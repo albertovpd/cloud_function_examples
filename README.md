@@ -12,6 +12,8 @@ For any doubts, contact us.
 
 ETL involving this piece of script have been developed by Alex Masip and Alberto Vargas, members of the Data Team of Labelium España.
 
-https://www.linkedin.com/in/alexmasip/
-https://www.linkedin.com/in/alberto-vargas-pina/
+- https://www.linkedin.com/in/alexmasip/
+
+- https://www.linkedin.com/in/alberto-vargas-pina/
+
 
