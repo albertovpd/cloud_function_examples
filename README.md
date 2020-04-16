@@ -10,7 +10,15 @@
 For any doubts, contact us.
 
 
-ETL involving this piece of script have been developed by Alex Masip and Alberto Vargas, members of the Data Team of Labelium España.
+        Something worth telling: Do not blindly embrace raw data from Google Trends. Check out info about it:
+        - https://support.google.com/google-ads/thread/8389370?hl=en
+        - https://github.com/GeneralMills/pytrends/issues/140
+
+        That means Pytrends is useless? Of course not. We encourage you to develop your own structures to avoid or reduce the Google marvelous noise on data.
+
+
+
+The ETL involving this piece of script have been developed by Alex Masip and Alberto Vargas, members of the Data Team of Labelium España.
 
 - https://www.linkedin.com/in/alexmasip/
 
