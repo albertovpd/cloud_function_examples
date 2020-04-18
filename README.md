@@ -6,16 +6,25 @@
 
 - You must zip the elements of this folder (**not the folder**, the scripts) with **requirements.txt**, **your json credentials** and upload it to GCF.
 
+
 - Instructions on development at this time (15.04.2020). There will be useful documentation soon.
 For any doubts, contact us.
 
 
-        Something worth telling: Do not blindly embrace raw data from Google Trends. Check out info about it:
+        Something worth telling: Do not blindly embrace raw data from Google Trends. Check info about it, for example, here:
         - https://support.google.com/google-ads/thread/8389370?hl=en
         - https://github.com/GeneralMills/pytrends/issues/140
 
-        That means Pytrends is useless? Of course not. We encourage you to develop your own structures to avoid or reduce the Google marvelous noise on data.
 
+That means Pytrends is useless? Of course not. It looks like the following: 
+
+- Google trends searches the maximum on the specified period, makes that maximum the 100% of Trend Index and everything else is averaged by that top. If you request information weekly, you will have a point with 100% of Trend Index each week.
+
+- If you request a list of elements, all elements will be averaged by the top one.
+
+- If you request each of your keywords separately, each keyword will be averaged on time by its own top.
+
+        We encourage you to develop your own structures to avoid or reduce the Google marvelous noise on data.
 
 
 The ETL involving this piece of script have been developed by Alex Masip and Alberto Vargas, members of the Data Team of Labelium España.
