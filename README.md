@@ -20,9 +20,13 @@ Check the whole project here:
 When creating the cloud function, in **Advanced**, write your environment variables (TOKEN_NAME,TOKEN_PATH...And their values. All, names and values without declaring string type (witout " "))
 
 
-        Something worth telling: Do not blindly embrace raw data from Google Trends. Check info about it, for example, here:
-        - https://support.google.com/google-ads/thread/8389370?hl=en
-        - https://github.com/GeneralMills/pytrends/issues/140
+-----------------------------------------
+
+
+***Something worth telling***: Do not blindly embrace raw data from Google Trends. Check info about it, for example, here:
+
+- https://support.google.com/google-ads/thread/8389370?hl=en
+- https://github.com/GeneralMills/pytrends/issues/140
 
 
 That means Pytrends is useless? Of course not. It looks like the following: 
@@ -32,8 +36,6 @@ That means Pytrends is useless? Of course not. It looks like the following:
 - If you request a list of elements, all elements will be averaged by the top one.
 
 - If you request each of your keywords separately, each keyword will be averaged on time by its own top.
-
-        We encourage you to develop your own structures to avoid or reduce the Google marvelous noise on data.
 
 
 The ETL involving this piece of script have been developed by Alex Masip and Alberto Vargas, members of the Data Team of Labelium España.
