@@ -4,18 +4,25 @@ In this case I am using the Google Trends API (Pytrends).
 
 There are 2 folders in this repo:
 
-- *Option A* folder is for programmers that know their code works perfectly on their pc, and they want to get the very same .csv files in a Cloud Storage bucket. The fast, cool way.
+- **Option A** folder is for programmers that know their code works perfectly on their pc, and they want to get the very same .csv files in a Cloud Storage bucket. The fast, cool way.
 
-- *Option B* is for programmers that for some reason, need to check things out, want to run the script locally and also reach the bucket loading the csv into it. Once the script runs as you want, it will work fine within the Cloud Function.
+- **Option B** is for programmers that for some reason, need to check things out, want to run the script locally and also reach the bucket loading the csv into it. Once the script runs as you want, it will work fine within the Cloud Function.
 
 ---------------------------------
 
-All right, here they are:
 
 **Option A:**
 
 <details>
   <summary>Click to expand</summary>
+
+- You need a Cloud Storage bucket ready to play with. If you do not have it, check it out here => https://github.com/albertovpd/automated_etl_google_cloud-social_dashboard
+
+Now to the code itselt: Make the script work on your PC. When it works as you want (check comments in *pytrends_request.py*):
+
+- Activate the first and last line of the script.
+- Zip all the scripts in *option_a*.
+- Upload that zip to the Cloud Function (take a glance to the link provided before).
 
 </details>
 
@@ -43,6 +50,8 @@ Once the code works as you want:
 
 
 - When creating the Cloud Function, in **Advanced**, write your environment variables (TOKEN_NAME,TOKEN_PATH...And their values. All, names and values without declaring string type (without " "))
+
+- You need to first run manually on your PC the code, get the CSV and upload it to the bucket in GCS, it is more like overwriting a file than writing it.
 
 </details>
 
@@ -73,6 +82,7 @@ That means Pytrends is useless? Of course not. It looks like the following:
 
 ---------------------------
 -----------------------------
+
 
 
 This Cloud Function is part of a full ETL in Google Cloud. Complete instructions available in the following links:
