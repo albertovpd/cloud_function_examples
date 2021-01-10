@@ -1,4 +1,6 @@
-# Using an API within a Cloud Function to load content in Google Cloud Storage.
+# Working with Cloud Functions
+
+**Using an API within a Cloud Function to load content in Google Cloud Storage.**
 
 In this case I am using the Google Trends API (Pytrends).
 
@@ -7,6 +9,14 @@ There are 2 folders in this repo:
 - **Option A** folder is for programmers that know their code works perfectly on their pc, and they want to get the very same .csv files in a Cloud Storage bucket. The fast, cool way.
 
 - **Option B** is for programmers that for some reason, need to check things out, want to run the script locally and also reach the bucket loading the csv into it. Once the script runs as you want, it will work fine within the Cloud Function.
+
+-------------------------------------------
+
+**Working with objects:**
+
+- **Option C:** Suppose you have a pipeline within a Cloud Function that generates pictures (with Matplotlib for instance), and you need to send them to Cloud Storage to work with them. 
+
+If that's your case, use this script (copied literally from the Google Documentation (*good job, Google*)). Save your generated figures in *../tmp/* and then use this function.
 
 ---------------------------------
 
